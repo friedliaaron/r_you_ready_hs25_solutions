@@ -3104,12 +3104,12 @@ vertical-align: -.125em;
   <li><a href="#transformation-von-characters" id="toc-transformation-von-characters" class="nav-link" data-scroll-target="#transformation-von-characters"><span class="header-section-number">3.5.1</span> Transformation von Characters</a></li>
   <li><a href="#rekodierung-invertierter-variablen" id="toc-rekodierung-invertierter-variablen" class="nav-link" data-scroll-target="#rekodierung-invertierter-variablen"><span class="header-section-number">3.5.2</span> Rekodierung invertierter Variablen</a></li>
   <li><a href="#wiederherstellung-fehlender-cvstm_variables" id="toc-wiederherstellung-fehlender-cvstm_variables" class="nav-link" data-scroll-target="#wiederherstellung-fehlender-cvstm_variables"><span class="header-section-number">3.5.3</span> Wiederherstellung fehlender cvstm_variables</a></li>
+  <li><a href="#entfernen-redundanter-variablen-optional" id="toc-entfernen-redundanter-variablen-optional" class="nav-link" data-scroll-target="#entfernen-redundanter-variablen-optional"><span class="header-section-number">3.5.4</span> Entfernen redundanter Variablen (optional)</a></li>
+  <li><a href="#umbennennen-von-variablen-optional" id="toc-umbennennen-von-variablen-optional" class="nav-link" data-scroll-target="#umbennennen-von-variablen-optional"><span class="header-section-number">3.5.5</span> Umbennennen von Variablen (optional)</a></li>
   </ul></li>
-  <li><a href="#entfernen-redundanter-variablen-optional" id="toc-entfernen-redundanter-variablen-optional" class="nav-link" data-scroll-target="#entfernen-redundanter-variablen-optional"><span class="header-section-number">3.6</span> Entfernen redundanter Variablen (optional)</a></li>
-  <li><a href="#entfernen-redundanter-variablen-optional-1" id="toc-entfernen-redundanter-variablen-optional-1" class="nav-link" data-scroll-target="#entfernen-redundanter-variablen-optional-1"><span class="header-section-number">3.7</span> Entfernen redundanter Variablen (optional)</a></li>
-  <li><a href="#entfernen-redundanter-variablen-optional-2" id="toc-entfernen-redundanter-variablen-optional-2" class="nav-link" data-scroll-target="#entfernen-redundanter-variablen-optional-2"><span class="header-section-number">3.8</span> Entfernen redundanter Variablen (optional)</a></li>
-  <li><a href="#erstellung-eines-long-dataframes-für-2x3-anova" id="toc-erstellung-eines-long-dataframes-für-2x3-anova" class="nav-link" data-scroll-target="#erstellung-eines-long-dataframes-für-2x3-anova"><span class="header-section-number">3.9</span> Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</a></li>
-  <li><a href="#überprüfung-vor-dem-speichern" id="toc-überprüfung-vor-dem-speichern" class="nav-link" data-scroll-target="#überprüfung-vor-dem-speichern"><span class="header-section-number">3.10</span> Überprüfung vor dem Speichern</a></li>
+  <li><a href="#berechnung-mittelwerte-mmq" id="toc-berechnung-mittelwerte-mmq" class="nav-link" data-scroll-target="#berechnung-mittelwerte-mmq"><span class="header-section-number">3.6</span> Berechnung Mittelwerte MMQ</a></li>
+  <li><a href="#erstellung-eines-long-dataframes-für-2x3-anova" id="toc-erstellung-eines-long-dataframes-für-2x3-anova" class="nav-link" data-scroll-target="#erstellung-eines-long-dataframes-für-2x3-anova"><span class="header-section-number">3.7</span> Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</a></li>
+  <li><a href="#überprüfung-vor-dem-speichern" id="toc-überprüfung-vor-dem-speichern" class="nav-link" data-scroll-target="#überprüfung-vor-dem-speichern"><span class="header-section-number">3.8</span> Überprüfung vor dem Speichern</a></li>
   </ul></li>
   <li><a href="#speichern-der-verarbeiteten-dataframes" id="toc-speichern-der-verarbeiteten-dataframes" class="nav-link" data-scroll-target="#speichern-der-verarbeiteten-dataframes"><span class="header-section-number">4</span> Speichern der verarbeiteten Dataframes</a></li>
   <li><a href="#session-info" id="toc-session-info" class="nav-link" data-scroll-target="#session-info"><span class="header-section-number">5</span> Session info</a></li>
@@ -3148,21 +3148,31 @@ vertical-align: -.125em;
 <section id="processing" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Processing</h1>
 <p>Grinschgl, S., Meyerhoff, H.S., Schwan, S. <em>et al.</em> From metacognitive beliefs to strategy selection: does fake performance feedback influence cognitive offloading?. <em>Psychological Research</em> <strong>85</strong>, 2654–2666 (2021). <a href="https://doi.org/10.1007/s00426-020-01435-9" class="uri">https://doi.org/10.1007/s00426-020-01435-9</a></p>
-<p>Dieses File zeigt eine mögliche Musterlösung!</p>
-<p>Hinweis: Jede/r Studierende hat einen individuellen Datensatz erhalten. Daher sind nicht immer alle Schritte zwingend erforderlich!</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Musterlösung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dies ist eine von mehreren möglichen Lösungen für die Analysis- und Processing-Skripte. Da die Berichte individuell an Ihren spezifischen Datensatz angepasst wurden, bedeuten Abweichungen von dieser Vorlage <strong>nicht,</strong> dass Ihr Code oder Ihre Ergebnisse notwendigerweise falsch sind.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Note</strong></p>
 <p>Um systematische Unregelmäßigkeiten einzuführen, wurden die Datensätze auf verschiedene Weise modifiziert. Nur ein Teil dieser Bereinigungsschritte wird für Ihren individuellen Datensatz relevant sein.</p>
 <p><strong>Angewandte Datenmanipulationen</strong></p>
 <p>Um systematische Unregelmäßigkeiten zu erzeugen, wurden die Datensätze wie folgt verändert:</p>
@@ -3246,12 +3256,12 @@ Note
 <section id="zusammenführen-der-datensätze-merging" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="zusammenführen-der-datensätze-merging"><span class="header-section-number">3.3</span> Zusammenführen der Datensätze (Merging)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> data_cb <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_cvstm, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_vp, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_pct, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_mmq, <span class="at">by =</span> <span class="fu">c</span>( <span class="st">&quot;code&quot;</span><span class="ot">=</span><span class="st">&quot;id&quot;</span> )) <span class="sc">%&gt;%</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_strategies, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> data_cb <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_cvstm, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_vp, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_pct, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_mmq, <span class="at">by =</span> <span class="fu">c</span>( <span class="st">&quot;code&quot;</span><span class="ot">=</span><span class="st">&quot;id&quot;</span> )) <span class="sc">|&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_strategies, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_ratings, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -3892,10 +3902,10 @@ Note
 <h3 data-number="3.5.1" class="anchored" data-anchor-id="transformation-von-characters"><span class="header-section-number">3.5.1</span> Transformation von Characters</h3>
 <p>Für den Fall, dass wir Spalten haben, in denen die Characters noch nicht nach dem angemessenen Kodierschema rekodiert wurden.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
@@ -3912,10 +3922,10 @@ Note
 </div>
 <p>Falls sich immer noch Characters im Dataframe befinden.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
@@ -3932,14 +3942,14 @@ Note
 </div>
 <p>Transformation zu Numeric</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), <span class="sc">~</span> <span class="fu">as.numeric</span>(.)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="rekodierung-invertierter-variablen" class="level3" data-number="3.5.2">
 <h3 data-number="3.5.2" class="anchored" data-anchor-id="rekodierung-invertierter-variablen"><span class="header-section-number">3.5.2</span> Rekodierung invertierter Variablen</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">ends_with</span>(<span class="st">&quot;_r&quot;</span>), <span class="sc">~</span> <span class="dv">4</span> <span class="sc">-</span> .x)</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3947,8 +3957,9 @@ Note
 </section>
 <section id="wiederherstellung-fehlender-cvstm_variables" class="level3" data-number="3.5.3">
 <h3 data-number="3.5.3" class="anchored" data-anchor-id="wiederherstellung-fehlender-cvstm_variables"><span class="header-section-number">3.5.3</span> Wiederherstellung fehlender cvstm_variables</h3>
+<p>Fehlende <code>cvstm_procorrect</code> Variablen können aus der <code>cvstm_sum</code> Variable berechnet werden (sum/120)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">cvstm_propcorrect =</span> <span class="fu">replace</span>(</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>      cvstm_propcorrect,</span>
@@ -3958,41 +3969,40 @@ Note
 <span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-</section>
-<section id="entfernen-redundanter-variablen-optional" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="entfernen-redundanter-variablen-optional"><span class="header-section-number">3.6</span> Entfernen redundanter Variablen (optional)</h2>
+<section id="entfernen-redundanter-variablen-optional" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="entfernen-redundanter-variablen-optional"><span class="header-section-number">3.5.4</span> Entfernen redundanter Variablen (optional)</h3>
 <p>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(group_all.x, group_all.y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="entfernen-redundanter-variablen-optional-1" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="entfernen-redundanter-variablen-optional-1"><span class="header-section-number">3.7</span> Entfernen redundanter Variablen (optional)</h2>
-<p>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</p>
+<section id="umbennennen-von-variablen-optional" class="level3" data-number="3.5.5">
+<h3 data-number="3.5.5" class="anchored" data-anchor-id="umbennennen-von-variablen-optional"><span class="header-section-number">3.5.5</span> Umbennennen von Variablen (optional)</h3>
+<p>Zur Einhaltung von snake_case und Leserlichkeit.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">group_all =</span> group)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span>   </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>   </span>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;pre_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;pre&quot;</span>))</span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span>   </span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>   </span>
 <span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;mmq_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;question&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="entfernen-redundanter-variablen-optional-2" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="entfernen-redundanter-variablen-optional-2"><span class="header-section-number">3.8</span> Entfernen redundanter Variablen (optional)</h2>
-<p>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</p>
+</section>
+<section id="berechnung-mittelwerte-mmq" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="berechnung-mittelwerte-mmq"><span class="header-section-number">3.6</span> Berechnung Mittelwerte MMQ</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>    </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mmq_mean =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;mmq_&quot;</span>)), <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="erstellung-eines-long-dataframes-für-2x3-anova" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="erstellung-eines-long-dataframes-für-2x3-anova"><span class="header-section-number">3.9</span> Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</h2>
+<section id="erstellung-eines-long-dataframes-für-2x3-anova" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="erstellung-eines-long-dataframes-für-2x3-anova"><span class="header-section-number">3.7</span> Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dat_full_long <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dat_full_long <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">pivot_longer</span>(     </span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">cols =</span> <span class="fu">c</span>(pre_1, pre_4),      </span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">names_to =</span> <span class="st">&quot;time_rating&quot;</span>,       </span>
@@ -4000,8 +4010,8 @@ Note
 <span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>     )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="überprüfung-vor-dem-speichern" class="level2" data-number="3.10">
-<h2 data-number="3.10" class="anchored" data-anchor-id="überprüfung-vor-dem-speichern"><span class="header-section-number">3.10</span> Überprüfung vor dem Speichern</h2>
+<section id="überprüfung-vor-dem-speichern" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="überprüfung-vor-dem-speichern"><span class="header-section-number">3.8</span> Überprüfung vor dem Speichern</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dat_full)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -4591,12 +4601,10 @@ Note
 <section id="speichern-der-verarbeiteten-dataframes" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Speichern der verarbeiteten Dataframes</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  dat_full,(<span class="st">&quot;processed/dat_full.csv&quot;</span>)</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(dat_full_long, </span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;data/processed/dat_long.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(dat_full,<span class="fu">here</span>((<span class="st">&quot;processed/dat_full.csv&quot;</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(dat_full_long, <span class="fu">here</span>(<span class="st">&quot;data/processed/dat_long.csv&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="session-info" class="level1" data-number="5">
@@ -5148,297 +5156,297 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>Grinschgl, S., Meyerhoff, H.S., Schwan, S. *et al.* From metacognitive beliefs to strategy selection: does fake performance feedback influence cognitive offloading?. *Psychological Research* **85**, 2654–2666 (2021). <span class="ot">&lt;https://doi.org/10.1007/s00426-020-01435-9&gt;</span></span>
 <span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a>Dieses File zeigt eine mögliche Musterlösung!</span>
-<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-35"><a href="#cb28-35" aria-hidden="true" tabindex="-1"></a>Hinweis: Jede/r Studierende hat einen individuellen Datensatz erhalten. Daher sind nicht immer alle Schritte zwingend erforderlich!</span>
-<span id="cb28-36"><a href="#cb28-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-37"><a href="#cb28-37" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse=&quot;true&quot;}</span>
-<span id="cb28-38"><a href="#cb28-38" aria-hidden="true" tabindex="-1"></a>**Note**</span>
-<span id="cb28-39"><a href="#cb28-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-40"><a href="#cb28-40" aria-hidden="true" tabindex="-1"></a>Um systematische Unregelmäßigkeiten einzuführen, wurden die Datensätze auf verschiedene Weise modifiziert. Nur ein Teil dieser Bereinigungsschritte wird für Ihren individuellen Datensatz relevant sein.</span>
+<span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Musterlösung</span></span>
+<span id="cb28-35"><a href="#cb28-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-36"><a href="#cb28-36" aria-hidden="true" tabindex="-1"></a>Dies ist eine von mehreren möglichen Lösungen für die Analysis- und Processing-Skripte. Da die Berichte individuell an Ihren spezifischen Datensatz angepasst wurden, bedeuten Abweichungen von dieser Vorlage **nicht,** dass Ihr Code oder Ihre Ergebnisse notwendigerweise falsch sind.</span>
+<span id="cb28-37"><a href="#cb28-37" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb28-38"><a href="#cb28-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-39"><a href="#cb28-39" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse=&quot;true&quot;}</span>
+<span id="cb28-40"><a href="#cb28-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hinweis</span></span>
 <span id="cb28-41"><a href="#cb28-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-42"><a href="#cb28-42" aria-hidden="true" tabindex="-1"></a>**Angewandte Datenmanipulationen**</span>
+<span id="cb28-42"><a href="#cb28-42" aria-hidden="true" tabindex="-1"></a>Um systematische Unregelmäßigkeiten einzuführen, wurden die Datensätze auf verschiedene Weise modifiziert. Nur ein Teil dieser Bereinigungsschritte wird für Ihren individuellen Datensatz relevant sein.</span>
 <span id="cb28-43"><a href="#cb28-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-44"><a href="#cb28-44" aria-hidden="true" tabindex="-1"></a>Um systematische Unregelmäßigkeiten zu erzeugen, wurden die Datensätze wie folgt verändert:</span>
+<span id="cb28-44"><a href="#cb28-44" aria-hidden="true" tabindex="-1"></a>**Angewandte Datenmanipulationen**</span>
 <span id="cb28-45"><a href="#cb28-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a>**Für alle Studierenden:**</span>
+<span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a>Um systematische Unregelmäßigkeiten zu erzeugen, wurden die Datensätze wie folgt verändert:</span>
 <span id="cb28-47"><a href="#cb28-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **zwei zufällig ausgewählte, invertierte Variablen**, die entsprechend umkodiert werden müssen.</span>
+<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a>**Für alle Studierenden:**</span>
 <span id="cb28-49"><a href="#cb28-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-50"><a href="#cb28-50" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **einen Teildatensatz** (entweder *data_cb* oder *data_vp*), der **doppelte Zeilen (Duplikate)** enthält, die vor dem Zusammenführen bereinigt werden müssen.</span>
+<span id="cb28-50"><a href="#cb28-50" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **zwei zufällig ausgewählte, invertierte Variablen**, die entsprechend umkodiert werden müssen.</span>
 <span id="cb28-51"><a href="#cb28-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-52"><a href="#cb28-52" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **drei komplett leere Zeilen**.</span>
+<span id="cb28-52"><a href="#cb28-52" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **einen Teildatensatz** (entweder *data_cb* oder *data_vp*), der **doppelte Zeilen (Duplikate)** enthält, die vor dem Zusammenführen bereinigt werden müssen.</span>
 <span id="cb28-53"><a href="#cb28-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-54"><a href="#cb28-54" aria-hidden="true" tabindex="-1"></a>**Individuelle Modifikationen:**</span>
+<span id="cb28-54"><a href="#cb28-54" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeder Datensatz enthält **drei komplett leere Zeilen**.</span>
 <span id="cb28-55"><a href="#cb28-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-56"><a href="#cb28-56" aria-hidden="true" tabindex="-1"></a>Zusätzlich erhielt jeder Datensatz **eine der folgenden drei datensatzspezifischen Verzerrungen**:</span>
+<span id="cb28-56"><a href="#cb28-56" aria-hidden="true" tabindex="-1"></a>**Individuelle Modifikationen:**</span>
 <span id="cb28-57"><a href="#cb28-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-58"><a href="#cb28-58" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**MMQ:** Likert-Antworten wurden umkodiert, um der Item-Formulierung zu entsprechen.</span>
+<span id="cb28-58"><a href="#cb28-58" aria-hidden="true" tabindex="-1"></a>Zusätzlich erhielt jeder Datensatz **eine der folgenden drei datensatzspezifischen Verzerrungen**:</span>
 <span id="cb28-59"><a href="#cb28-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-60"><a href="#cb28-60" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**MMQ:** Numerische Antworten wurden durch ausgeschriebene Wörter ersetzt (z. B. *1* → *one*).</span>
+<span id="cb28-60"><a href="#cb28-60" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**MMQ:** Likert-Antworten wurden umkodiert, um der Item-Formulierung zu entsprechen.</span>
 <span id="cb28-61"><a href="#cb28-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-62"><a href="#cb28-62" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**CVSTM:** Ausgewählte Werte wurden durch *–999* ersetzt; die korrekten Werte können mithilfe von <span class="in">`cvstm_sum`</span> wiederhergestellt werden.</span>
+<span id="cb28-62"><a href="#cb28-62" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**MMQ:** Numerische Antworten wurden durch ausgeschriebene Wörter ersetzt (z. B. *1* → *one*).</span>
 <span id="cb28-63"><a href="#cb28-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-64"><a href="#cb28-64" aria-hidden="true" tabindex="-1"></a>Insgesamt wurden **vier von sechs möglichen „Dirtying-Faktoren“** auf jeden Datensatz angewendet.</span>
+<span id="cb28-64"><a href="#cb28-64" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**CVSTM:** Ausgewählte Werte wurden durch *–999* ersetzt; die korrekten Werte können mithilfe von <span class="in">`cvstm_sum`</span> wiederhergestellt werden.</span>
 <span id="cb28-65"><a href="#cb28-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-66"><a href="#cb28-66" aria-hidden="true" tabindex="-1"></a>Dieses Skript behandelt alle diese Manipulationen, obwohl **nicht jeder Datensatz jeden Bereinigungsschritt benötigt wird.**</span>
-<span id="cb28-67"><a href="#cb28-67" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb28-68"><a href="#cb28-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-69"><a href="#cb28-69" aria-hidden="true" tabindex="-1"></a>**Geben Sie diese Datei nicht weiter! Sie ist nur für Studierende zugänglich, die am Seminar &quot;R u Ready&quot; im Herbstsemester 2025 teilnehmen.**</span>
+<span id="cb28-66"><a href="#cb28-66" aria-hidden="true" tabindex="-1"></a>Insgesamt wurden **vier von sechs möglichen „Dirtying-Faktoren“** auf jeden Datensatz angewendet.</span>
+<span id="cb28-67"><a href="#cb28-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-68"><a href="#cb28-68" aria-hidden="true" tabindex="-1"></a>Dieses Skript behandelt alle diese Manipulationen, obwohl **nicht jeder Datensatz jeden Bereinigungsschritt benötigt wird.**</span>
+<span id="cb28-69"><a href="#cb28-69" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb28-70"><a href="#cb28-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-71"><a href="#cb28-71" aria-hidden="true" tabindex="-1"></a><span class="fu"># Vorbereitungen</span></span>
+<span id="cb28-71"><a href="#cb28-71" aria-hidden="true" tabindex="-1"></a>**Geben Sie diese Datei nicht weiter! Sie ist nur für Studierende zugänglich, die am Seminar &quot;R u Ready&quot; im Herbstsemester 2025 teilnehmen.**</span>
 <span id="cb28-72"><a href="#cb28-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-73"><a href="#cb28-73" aria-hidden="true" tabindex="-1"></a><span class="fu">## Libraries</span></span>
+<span id="cb28-73"><a href="#cb28-73" aria-hidden="true" tabindex="-1"></a><span class="fu"># Vorbereitungen</span></span>
 <span id="cb28-74"><a href="#cb28-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-75"><a href="#cb28-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, message=FALSE, warning=FALSE, echo= TRUE }</span></span>
-<span id="cb28-76"><a href="#cb28-76" aria-hidden="true" tabindex="-1"></a><span class="in">library(readxl)</span></span>
-<span id="cb28-77"><a href="#cb28-77" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
-<span id="cb28-78"><a href="#cb28-78" aria-hidden="true" tabindex="-1"></a><span class="in">library(skimr)</span></span>
-<span id="cb28-79"><a href="#cb28-79" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
-<span id="cb28-80"><a href="#cb28-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-81"><a href="#cb28-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-82"><a href="#cb28-82" aria-hidden="true" tabindex="-1"></a><span class="fu"># Datenvorbereitung</span></span>
+<span id="cb28-75"><a href="#cb28-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## Libraries</span></span>
+<span id="cb28-76"><a href="#cb28-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-77"><a href="#cb28-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, message=FALSE, warning=FALSE, echo= TRUE }</span></span>
+<span id="cb28-78"><a href="#cb28-78" aria-hidden="true" tabindex="-1"></a><span class="in">library(readxl)</span></span>
+<span id="cb28-79"><a href="#cb28-79" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb28-80"><a href="#cb28-80" aria-hidden="true" tabindex="-1"></a><span class="in">library(skimr)</span></span>
+<span id="cb28-81"><a href="#cb28-81" aria-hidden="true" tabindex="-1"></a><span class="in">library(here)</span></span>
+<span id="cb28-82"><a href="#cb28-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-83"><a href="#cb28-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-84"><a href="#cb28-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Datensätze laden</span></span>
+<span id="cb28-84"><a href="#cb28-84" aria-hidden="true" tabindex="-1"></a><span class="fu"># Datenvorbereitung</span></span>
 <span id="cb28-85"><a href="#cb28-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-86"><a href="#cb28-86" aria-hidden="true" tabindex="-1"></a><span class="in">```{r,echo=FALSE, message = FALSE, results= &#39;hide&#39;}</span></span>
+<span id="cb28-86"><a href="#cb28-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## Datensätze laden</span></span>
 <span id="cb28-87"><a href="#cb28-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-88"><a href="#cb28-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-89"><a href="#cb28-89" aria-hidden="true" tabindex="-1"></a><span class="in">data_cb &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_cb.csv&quot;))</span></span>
-<span id="cb28-90"><a href="#cb28-90" aria-hidden="true" tabindex="-1"></a><span class="in">data_cvstm &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_cvstm.csv&quot;))</span></span>
-<span id="cb28-91"><a href="#cb28-91" aria-hidden="true" tabindex="-1"></a><span class="in">data_vp &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_vp.csv&quot;))</span></span>
-<span id="cb28-92"><a href="#cb28-92" aria-hidden="true" tabindex="-1"></a><span class="in">data_pct &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_pct.csv&quot;))</span></span>
-<span id="cb28-93"><a href="#cb28-93" aria-hidden="true" tabindex="-1"></a><span class="in">data_mmq &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_mmq.csv&quot;))</span></span>
-<span id="cb28-94"><a href="#cb28-94" aria-hidden="true" tabindex="-1"></a><span class="in">data_strategies &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_strategies.csv&quot;))</span></span>
-<span id="cb28-95"><a href="#cb28-95" aria-hidden="true" tabindex="-1"></a><span class="in">data_ratings &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_ratings.csv&quot;))</span></span>
-<span id="cb28-96"><a href="#cb28-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-97"><a href="#cb28-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-88"><a href="#cb28-88" aria-hidden="true" tabindex="-1"></a><span class="in">```{r,echo=FALSE, message = FALSE, results= &#39;hide&#39;}</span></span>
+<span id="cb28-89"><a href="#cb28-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-90"><a href="#cb28-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-91"><a href="#cb28-91" aria-hidden="true" tabindex="-1"></a><span class="in">data_cb &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_cb.csv&quot;))</span></span>
+<span id="cb28-92"><a href="#cb28-92" aria-hidden="true" tabindex="-1"></a><span class="in">data_cvstm &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_cvstm.csv&quot;))</span></span>
+<span id="cb28-93"><a href="#cb28-93" aria-hidden="true" tabindex="-1"></a><span class="in">data_vp &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_vp.csv&quot;))</span></span>
+<span id="cb28-94"><a href="#cb28-94" aria-hidden="true" tabindex="-1"></a><span class="in">data_pct &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_pct.csv&quot;))</span></span>
+<span id="cb28-95"><a href="#cb28-95" aria-hidden="true" tabindex="-1"></a><span class="in">data_mmq &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_mmq.csv&quot;))</span></span>
+<span id="cb28-96"><a href="#cb28-96" aria-hidden="true" tabindex="-1"></a><span class="in">data_strategies &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_strategies.csv&quot;))</span></span>
+<span id="cb28-97"><a href="#cb28-97" aria-hidden="true" tabindex="-1"></a><span class="in">data_ratings &lt;- read_csv(paste0(&quot;data/raw/simulated_datasets/&quot;, params$id, &quot;/data_ratings.csv&quot;))</span></span>
 <span id="cb28-98"><a href="#cb28-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-99"><a href="#cb28-99" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval = FALSE, echo=TRUE}</span></span>
-<span id="cb28-100"><a href="#cb28-100" aria-hidden="true" tabindex="-1"></a><span class="in">data_cb         &lt;- read_csv(here(&quot;data/raw/data_cb.csv&quot;))</span></span>
-<span id="cb28-101"><a href="#cb28-101" aria-hidden="true" tabindex="-1"></a><span class="in">data_cvstm      &lt;- read_csv(here(&quot;data/raw/data_cvstm.csv&quot;))</span></span>
-<span id="cb28-102"><a href="#cb28-102" aria-hidden="true" tabindex="-1"></a><span class="in">data_vp         &lt;- read_csv(here(&quot;data/raw/data_vp.csv&quot;))</span></span>
-<span id="cb28-103"><a href="#cb28-103" aria-hidden="true" tabindex="-1"></a><span class="in">data_pct        &lt;- read_csv(here(&quot;data/raw/data_pct.csv&quot;))</span></span>
-<span id="cb28-104"><a href="#cb28-104" aria-hidden="true" tabindex="-1"></a><span class="in">data_mmq        &lt;- read_csv(here(&quot;data/raw/data_mmq.csv&quot;))</span></span>
-<span id="cb28-105"><a href="#cb28-105" aria-hidden="true" tabindex="-1"></a><span class="in">data_strategies &lt;- read_csv(here(&quot;data/raw/data_strategies.csv&quot;))</span></span>
-<span id="cb28-106"><a href="#cb28-106" aria-hidden="true" tabindex="-1"></a><span class="in">data_ratings    &lt;- read_csv(here(&quot;data/raw/data_ratings.csv&quot;))</span></span>
-<span id="cb28-107"><a href="#cb28-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-108"><a href="#cb28-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-109"><a href="#cb28-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## Überprüfung der Datensätze</span></span>
+<span id="cb28-99"><a href="#cb28-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-100"><a href="#cb28-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-101"><a href="#cb28-101" aria-hidden="true" tabindex="-1"></a><span class="in">```{r eval = FALSE, echo=TRUE}</span></span>
+<span id="cb28-102"><a href="#cb28-102" aria-hidden="true" tabindex="-1"></a><span class="in">data_cb         &lt;- read_csv(here(&quot;data/raw/data_cb.csv&quot;))</span></span>
+<span id="cb28-103"><a href="#cb28-103" aria-hidden="true" tabindex="-1"></a><span class="in">data_cvstm      &lt;- read_csv(here(&quot;data/raw/data_cvstm.csv&quot;))</span></span>
+<span id="cb28-104"><a href="#cb28-104" aria-hidden="true" tabindex="-1"></a><span class="in">data_vp         &lt;- read_csv(here(&quot;data/raw/data_vp.csv&quot;))</span></span>
+<span id="cb28-105"><a href="#cb28-105" aria-hidden="true" tabindex="-1"></a><span class="in">data_pct        &lt;- read_csv(here(&quot;data/raw/data_pct.csv&quot;))</span></span>
+<span id="cb28-106"><a href="#cb28-106" aria-hidden="true" tabindex="-1"></a><span class="in">data_mmq        &lt;- read_csv(here(&quot;data/raw/data_mmq.csv&quot;))</span></span>
+<span id="cb28-107"><a href="#cb28-107" aria-hidden="true" tabindex="-1"></a><span class="in">data_strategies &lt;- read_csv(here(&quot;data/raw/data_strategies.csv&quot;))</span></span>
+<span id="cb28-108"><a href="#cb28-108" aria-hidden="true" tabindex="-1"></a><span class="in">data_ratings    &lt;- read_csv(here(&quot;data/raw/data_ratings.csv&quot;))</span></span>
+<span id="cb28-109"><a href="#cb28-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-110"><a href="#cb28-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-111"><a href="#cb28-111" aria-hidden="true" tabindex="-1"></a>Nicht in jedem Datensatz ist die gleiche Anzahl an Beobachtungen vorhanden. Daher prüfen wir auf leere Zeilen oder doppelte IDs. Alle Datensätze haben leere Zeilen. Daher bereinigen wir die leeren Zeilen.</span>
+<span id="cb28-111"><a href="#cb28-111" aria-hidden="true" tabindex="-1"></a><span class="fu">## Überprüfung der Datensätze</span></span>
 <span id="cb28-112"><a href="#cb28-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-115"><a href="#cb28-115" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-116"><a href="#cb28-116" aria-hidden="true" tabindex="-1"></a>data_cb      <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_cb)</span>
-<span id="cb28-117"><a href="#cb28-117" aria-hidden="true" tabindex="-1"></a>data_cvstm   <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_cvstm)</span>
-<span id="cb28-118"><a href="#cb28-118" aria-hidden="true" tabindex="-1"></a>data_vp      <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_vp)</span>
-<span id="cb28-119"><a href="#cb28-119" aria-hidden="true" tabindex="-1"></a>data_pct     <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_pct)</span>
-<span id="cb28-120"><a href="#cb28-120" aria-hidden="true" tabindex="-1"></a>data_mmq     <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_mmq)</span>
-<span id="cb28-121"><a href="#cb28-121" aria-hidden="true" tabindex="-1"></a>data_ratings <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_ratings)</span>
-<span id="cb28-122"><a href="#cb28-122" aria-hidden="true" tabindex="-1"></a>data_strategies <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_strategies)</span>
-<span id="cb28-123"><a href="#cb28-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-124"><a href="#cb28-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-113"><a href="#cb28-113" aria-hidden="true" tabindex="-1"></a>Nicht in jedem Datensatz ist die gleiche Anzahl an Beobachtungen vorhanden. Daher prüfen wir auf leere Zeilen oder doppelte IDs. Alle Datensätze haben leere Zeilen. Daher bereinigen wir die leeren Zeilen.</span>
+<span id="cb28-114"><a href="#cb28-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-117"><a href="#cb28-117" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-118"><a href="#cb28-118" aria-hidden="true" tabindex="-1"></a>data_cb      <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_cb)</span>
+<span id="cb28-119"><a href="#cb28-119" aria-hidden="true" tabindex="-1"></a>data_cvstm   <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_cvstm)</span>
+<span id="cb28-120"><a href="#cb28-120" aria-hidden="true" tabindex="-1"></a>data_vp      <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_vp)</span>
+<span id="cb28-121"><a href="#cb28-121" aria-hidden="true" tabindex="-1"></a>data_pct     <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_pct)</span>
+<span id="cb28-122"><a href="#cb28-122" aria-hidden="true" tabindex="-1"></a>data_mmq     <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_mmq)</span>
+<span id="cb28-123"><a href="#cb28-123" aria-hidden="true" tabindex="-1"></a>data_ratings <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_ratings)</span>
+<span id="cb28-124"><a href="#cb28-124" aria-hidden="true" tabindex="-1"></a>data_strategies <span class="ot">&lt;-</span> <span class="fu">drop_na</span>(data_strategies)</span>
 <span id="cb28-125"><a href="#cb28-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-126"><a href="#cb28-126" aria-hidden="true" tabindex="-1"></a>Nach dem Bereinigen der leeren Zeilen weist ein Datensatz immer noch eine falsche Anzahl an Beobachtungen auf. Wir prüfen auf doppelte Zeilen und entfernen die Duplikate. Dieser Schritt ist nur für den Datensatz mit Duplikaten notwendig.</span>
+<span id="cb28-126"><a href="#cb28-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-127"><a href="#cb28-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-130"><a href="#cb28-130" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-131"><a href="#cb28-131" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_vp<span class="sc">$</span>code)</span>
-<span id="cb28-132"><a href="#cb28-132" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_pct<span class="sc">$</span>code)</span>
-<span id="cb28-133"><a href="#cb28-133" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_cb<span class="sc">$</span>code)</span>
-<span id="cb28-134"><a href="#cb28-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-135"><a href="#cb28-135" aria-hidden="true" tabindex="-1"></a>data_vp <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_vp)</span>
-<span id="cb28-136"><a href="#cb28-136" aria-hidden="true" tabindex="-1"></a>data_cb <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_cb)</span>
-<span id="cb28-137"><a href="#cb28-137" aria-hidden="true" tabindex="-1"></a>data_pct <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_pct)</span>
-<span id="cb28-138"><a href="#cb28-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-139"><a href="#cb28-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-128"><a href="#cb28-128" aria-hidden="true" tabindex="-1"></a>Nach dem Bereinigen der leeren Zeilen weist ein Datensatz immer noch eine falsche Anzahl an Beobachtungen auf. Wir prüfen auf doppelte Zeilen und entfernen die Duplikate. Dieser Schritt ist nur für den Datensatz mit Duplikaten notwendig.</span>
+<span id="cb28-129"><a href="#cb28-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-132"><a href="#cb28-132" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-133"><a href="#cb28-133" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_vp<span class="sc">$</span>code)</span>
+<span id="cb28-134"><a href="#cb28-134" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_pct<span class="sc">$</span>code)</span>
+<span id="cb28-135"><a href="#cb28-135" aria-hidden="true" tabindex="-1"></a><span class="fu">n_distinct</span>(data_cb<span class="sc">$</span>code)</span>
+<span id="cb28-136"><a href="#cb28-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-137"><a href="#cb28-137" aria-hidden="true" tabindex="-1"></a>data_vp <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_vp)</span>
+<span id="cb28-138"><a href="#cb28-138" aria-hidden="true" tabindex="-1"></a>data_cb <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_cb)</span>
+<span id="cb28-139"><a href="#cb28-139" aria-hidden="true" tabindex="-1"></a>data_pct <span class="ot">&lt;-</span> <span class="fu">unique</span>(data_pct)</span>
 <span id="cb28-140"><a href="#cb28-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-141"><a href="#cb28-141" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zusammenführen der Datensätze (Merging)</span></span>
+<span id="cb28-141"><a href="#cb28-141" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-142"><a href="#cb28-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-145"><a href="#cb28-145" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-146"><a href="#cb28-146" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> data_cb <span class="sc">%&gt;%</span></span>
-<span id="cb28-147"><a href="#cb28-147" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_cvstm, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-148"><a href="#cb28-148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_vp, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-149"><a href="#cb28-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_pct, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-150"><a href="#cb28-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_mmq, <span class="at">by =</span> <span class="fu">c</span>( <span class="st">&quot;code&quot;</span><span class="ot">=</span><span class="st">&quot;id&quot;</span> )) <span class="sc">%&gt;%</span></span>
-<span id="cb28-151"><a href="#cb28-151" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_strategies, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb28-152"><a href="#cb28-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_ratings, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>)</span>
-<span id="cb28-153"><a href="#cb28-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-154"><a href="#cb28-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-155"><a href="#cb28-155" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bereinigung des zusammengeführten Datensatzes</span></span>
+<span id="cb28-143"><a href="#cb28-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zusammenführen der Datensätze (Merging)</span></span>
+<span id="cb28-144"><a href="#cb28-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-147"><a href="#cb28-147" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-148"><a href="#cb28-148" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> data_cb <span class="sc">|&gt;</span></span>
+<span id="cb28-149"><a href="#cb28-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_cvstm, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-150"><a href="#cb28-150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_vp, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-151"><a href="#cb28-151" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_pct, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-152"><a href="#cb28-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_mmq, <span class="at">by =</span> <span class="fu">c</span>( <span class="st">&quot;code&quot;</span><span class="ot">=</span><span class="st">&quot;id&quot;</span> )) <span class="sc">|&gt;</span></span>
+<span id="cb28-153"><a href="#cb28-153" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_strategies, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-154"><a href="#cb28-154" aria-hidden="true" tabindex="-1"></a>  <span class="fu">full_join</span>(data_ratings, <span class="at">by =</span> <span class="st">&quot;code&quot;</span>)</span>
+<span id="cb28-155"><a href="#cb28-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-156"><a href="#cb28-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-157"><a href="#cb28-157" aria-hidden="true" tabindex="-1"></a>Um Probleme zu identifizieren, die behoben werden müssen, inspizieren wir den Datensatz:</span>
+<span id="cb28-157"><a href="#cb28-157" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bereinigung des zusammengeführten Datensatzes</span></span>
 <span id="cb28-158"><a href="#cb28-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-161"><a href="#cb28-161" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-162"><a href="#cb28-162" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dat_full)</span>
-<span id="cb28-163"><a href="#cb28-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-164"><a href="#cb28-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-165"><a href="#cb28-165" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, message=FALSE}</span></span>
-<span id="cb28-166"><a href="#cb28-166" aria-hidden="true" tabindex="-1"></a><span class="in">str(dat_full)</span></span>
-<span id="cb28-167"><a href="#cb28-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-168"><a href="#cb28-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-169"><a href="#cb28-169" aria-hidden="true" tabindex="-1"></a>Probleme, die angegangen werden müssen (nicht bei allen Personen gleich):</span>
+<span id="cb28-159"><a href="#cb28-159" aria-hidden="true" tabindex="-1"></a>Um Probleme zu identifizieren, die behoben werden müssen, inspizieren wir den Datensatz:</span>
+<span id="cb28-160"><a href="#cb28-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-163"><a href="#cb28-163" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-164"><a href="#cb28-164" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dat_full)</span>
+<span id="cb28-165"><a href="#cb28-165" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-166"><a href="#cb28-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-167"><a href="#cb28-167" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, message=FALSE}</span></span>
+<span id="cb28-168"><a href="#cb28-168" aria-hidden="true" tabindex="-1"></a><span class="in">str(dat_full)</span></span>
+<span id="cb28-169"><a href="#cb28-169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-170"><a href="#cb28-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-171"><a href="#cb28-171" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>In einigen Datensätzen zeigt die Funktion <span class="in">`skim()`</span>, dass negative <span class="in">`cvstm_propcorrect`</span>-Werte vorhanden sind. Sowohl das Histogramm als auch der Mittelwert sehen unplausibel aus. Der p0-Wert zeigt -999-Werte an. Diese müssen korrigiert werden.</span>
+<span id="cb28-171"><a href="#cb28-171" aria-hidden="true" tabindex="-1"></a>Probleme, die angegangen werden müssen (nicht bei allen Personen gleich):</span>
 <span id="cb28-172"><a href="#cb28-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-173"><a href="#cb28-173" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Weiterhin zeigt der Befehl <span class="in">`str()`</span>, dass in einigen der <span class="in">`MMQ-Variablen`</span> Zeichen (Characters) enthalten sind. Diese müssen korrigiert werden.</span>
+<span id="cb28-173"><a href="#cb28-173" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>In einigen Datensätzen zeigt die Funktion <span class="in">`skim()`</span>, dass negative <span class="in">`cvstm_propcorrect`</span>-Werte vorhanden sind. Sowohl das Histogramm als auch der Mittelwert sehen unplausibel aus. Der p0-Wert zeigt -999-Werte an. Diese müssen korrigiert werden.</span>
 <span id="cb28-174"><a href="#cb28-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-175"><a href="#cb28-175" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>MMQ: Fragen, die auf <span class="sc">\_</span>r enden –<span class="sc">\&gt;</span> Müssen umkodiert werden.</span>
+<span id="cb28-175"><a href="#cb28-175" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Weiterhin zeigt der Befehl <span class="in">`str()`</span>, dass in einigen der <span class="in">`MMQ-Variablen`</span> Zeichen (Characters) enthalten sind. Diese müssen korrigiert werden.</span>
 <span id="cb28-176"><a href="#cb28-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-177"><a href="#cb28-177" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>MMQ: Fragen, die als Klasse &quot;character&quot; definiert sind. –<span class="sc">\&gt;</span> Eine visuelle Inspektion zeigt, dass einige numerische Werte als Strings eingegeben wurden.</span>
+<span id="cb28-177"><a href="#cb28-177" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>MMQ: Fragen, die auf <span class="sc">\_</span>r enden –<span class="sc">\&gt;</span> Müssen umkodiert werden.</span>
 <span id="cb28-178"><a href="#cb28-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-179"><a href="#cb28-179" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bereinigung</span></span>
+<span id="cb28-179"><a href="#cb28-179" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>MMQ: Fragen, die als Klasse &quot;character&quot; definiert sind. –<span class="sc">\&gt;</span> Eine visuelle Inspektion zeigt, dass einige numerische Werte als Strings eingegeben wurden.</span>
 <span id="cb28-180"><a href="#cb28-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-181"><a href="#cb28-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### Transformation von Characters</span></span>
+<span id="cb28-181"><a href="#cb28-181" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bereinigung</span></span>
 <span id="cb28-182"><a href="#cb28-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-183"><a href="#cb28-183" aria-hidden="true" tabindex="-1"></a>Für den Fall, dass wir Spalten haben, in denen die Characters noch nicht nach dem angemessenen Kodierschema rekodiert wurden.</span>
+<span id="cb28-183"><a href="#cb28-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Transformation von Characters</span></span>
 <span id="cb28-184"><a href="#cb28-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-187"><a href="#cb28-187" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-188"><a href="#cb28-188" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-189"><a href="#cb28-189" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-190"><a href="#cb28-190" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
-<span id="cb28-191"><a href="#cb28-191" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb28-192"><a href="#cb28-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-193"><a href="#cb28-193" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
-<span id="cb28-194"><a href="#cb28-194" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
-<span id="cb28-195"><a href="#cb28-195" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> <span class="fu">case_when</span>(</span>
-<span id="cb28-196"><a href="#cb28-196" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme überhaupt nicht zu&quot;</span> <span class="sc">~</span> <span class="st">&quot;0&quot;</span>,</span>
-<span id="cb28-197"><a href="#cb28-197" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme eher nicht zu&quot;</span>      <span class="sc">~</span> <span class="st">&quot;1&quot;</span>,</span>
-<span id="cb28-198"><a href="#cb28-198" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Teils, teils&quot;</span>              <span class="sc">~</span> <span class="st">&quot;2&quot;</span>,</span>
-<span id="cb28-199"><a href="#cb28-199" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme eher zu&quot;</span>            <span class="sc">~</span> <span class="st">&quot;3&quot;</span>,</span>
-<span id="cb28-200"><a href="#cb28-200" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme voll und ganz zu&quot;</span>   <span class="sc">~</span> <span class="st">&quot;4&quot;</span>,</span>
-<span id="cb28-201"><a href="#cb28-201" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> .</span>
-<span id="cb28-202"><a href="#cb28-202" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb28-203"><a href="#cb28-203" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb28-204"><a href="#cb28-204" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb28-205"><a href="#cb28-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-206"><a href="#cb28-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-185"><a href="#cb28-185" aria-hidden="true" tabindex="-1"></a>Für den Fall, dass wir Spalten haben, in denen die Characters noch nicht nach dem angemessenen Kodierschema rekodiert wurden.</span>
+<span id="cb28-186"><a href="#cb28-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-189"><a href="#cb28-189" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-190"><a href="#cb28-190" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-191"><a href="#cb28-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-192"><a href="#cb28-192" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
+<span id="cb28-193"><a href="#cb28-193" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb28-194"><a href="#cb28-194" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-195"><a href="#cb28-195" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
+<span id="cb28-196"><a href="#cb28-196" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
+<span id="cb28-197"><a href="#cb28-197" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> <span class="fu">case_when</span>(</span>
+<span id="cb28-198"><a href="#cb28-198" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme überhaupt nicht zu&quot;</span> <span class="sc">~</span> <span class="st">&quot;0&quot;</span>,</span>
+<span id="cb28-199"><a href="#cb28-199" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme eher nicht zu&quot;</span>      <span class="sc">~</span> <span class="st">&quot;1&quot;</span>,</span>
+<span id="cb28-200"><a href="#cb28-200" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Teils, teils&quot;</span>              <span class="sc">~</span> <span class="st">&quot;2&quot;</span>,</span>
+<span id="cb28-201"><a href="#cb28-201" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme eher zu&quot;</span>            <span class="sc">~</span> <span class="st">&quot;3&quot;</span>,</span>
+<span id="cb28-202"><a href="#cb28-202" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;Stimme voll und ganz zu&quot;</span>   <span class="sc">~</span> <span class="st">&quot;4&quot;</span>,</span>
+<span id="cb28-203"><a href="#cb28-203" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> .</span>
+<span id="cb28-204"><a href="#cb28-204" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb28-205"><a href="#cb28-205" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb28-206"><a href="#cb28-206" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb28-207"><a href="#cb28-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-208"><a href="#cb28-208" aria-hidden="true" tabindex="-1"></a>Falls sich immer noch Characters im Dataframe befinden.</span>
+<span id="cb28-208"><a href="#cb28-208" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-209"><a href="#cb28-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-212"><a href="#cb28-212" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-213"><a href="#cb28-213" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-214"><a href="#cb28-214" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-215"><a href="#cb28-215" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
-<span id="cb28-216"><a href="#cb28-216" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb28-217"><a href="#cb28-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-218"><a href="#cb28-218" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
-<span id="cb28-219"><a href="#cb28-219" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
-<span id="cb28-220"><a href="#cb28-220" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> <span class="fu">case_when</span>(</span>
-<span id="cb28-221"><a href="#cb28-221" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;zero&quot;</span>   <span class="sc">~</span> <span class="st">&quot;0&quot;</span>,</span>
-<span id="cb28-222"><a href="#cb28-222" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;one&quot;</span>   <span class="sc">~</span> <span class="st">&quot;1&quot;</span>,</span>
-<span id="cb28-223"><a href="#cb28-223" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;two&quot;</span> <span class="sc">~</span> <span class="st">&quot;2&quot;</span>,</span>
-<span id="cb28-224"><a href="#cb28-224" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;three&quot;</span>  <span class="sc">~</span> <span class="st">&quot;3&quot;</span>,</span>
-<span id="cb28-225"><a href="#cb28-225" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;four&quot;</span>  <span class="sc">~</span> <span class="st">&quot;4&quot;</span>,</span>
-<span id="cb28-226"><a href="#cb28-226" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> .</span>
-<span id="cb28-227"><a href="#cb28-227" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb28-228"><a href="#cb28-228" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb28-229"><a href="#cb28-229" aria-hidden="true" tabindex="-1"></a>  ) </span>
-<span id="cb28-230"><a href="#cb28-230" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-231"><a href="#cb28-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-232"><a href="#cb28-232" aria-hidden="true" tabindex="-1"></a>Transformation zu Numeric</span>
+<span id="cb28-210"><a href="#cb28-210" aria-hidden="true" tabindex="-1"></a>Falls sich immer noch Characters im Dataframe befinden.</span>
+<span id="cb28-211"><a href="#cb28-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-214"><a href="#cb28-214" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-215"><a href="#cb28-215" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-216"><a href="#cb28-216" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-217"><a href="#cb28-217" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), as.character)</span>
+<span id="cb28-218"><a href="#cb28-218" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb28-219"><a href="#cb28-219" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-220"><a href="#cb28-220" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(</span>
+<span id="cb28-221"><a href="#cb28-221" aria-hidden="true" tabindex="-1"></a>      <span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>),</span>
+<span id="cb28-222"><a href="#cb28-222" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> <span class="fu">case_when</span>(</span>
+<span id="cb28-223"><a href="#cb28-223" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;zero&quot;</span>   <span class="sc">~</span> <span class="st">&quot;0&quot;</span>,</span>
+<span id="cb28-224"><a href="#cb28-224" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;one&quot;</span>   <span class="sc">~</span> <span class="st">&quot;1&quot;</span>,</span>
+<span id="cb28-225"><a href="#cb28-225" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;two&quot;</span> <span class="sc">~</span> <span class="st">&quot;2&quot;</span>,</span>
+<span id="cb28-226"><a href="#cb28-226" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;three&quot;</span>  <span class="sc">~</span> <span class="st">&quot;3&quot;</span>,</span>
+<span id="cb28-227"><a href="#cb28-227" aria-hidden="true" tabindex="-1"></a>        . <span class="sc">==</span> <span class="st">&quot;four&quot;</span>  <span class="sc">~</span> <span class="st">&quot;4&quot;</span>,</span>
+<span id="cb28-228"><a href="#cb28-228" aria-hidden="true" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> .</span>
+<span id="cb28-229"><a href="#cb28-229" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb28-230"><a href="#cb28-230" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb28-231"><a href="#cb28-231" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb28-232"><a href="#cb28-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-233"><a href="#cb28-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-236"><a href="#cb28-236" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-237"><a href="#cb28-237" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-238"><a href="#cb28-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), <span class="sc">~</span> <span class="fu">as.numeric</span>(.)))</span>
-<span id="cb28-239"><a href="#cb28-239" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-240"><a href="#cb28-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-241"><a href="#cb28-241" aria-hidden="true" tabindex="-1"></a><span class="fu">### Rekodierung invertierter Variablen</span></span>
+<span id="cb28-234"><a href="#cb28-234" aria-hidden="true" tabindex="-1"></a>Transformation zu Numeric</span>
+<span id="cb28-235"><a href="#cb28-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-238"><a href="#cb28-238" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-239"><a href="#cb28-239" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-240"><a href="#cb28-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;question_&quot;</span>), <span class="sc">~</span> <span class="fu">as.numeric</span>(.)))</span>
+<span id="cb28-241"><a href="#cb28-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-242"><a href="#cb28-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-245"><a href="#cb28-245" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-246"><a href="#cb28-246" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-247"><a href="#cb28-247" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-248"><a href="#cb28-248" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">ends_with</span>(<span class="st">&quot;_r&quot;</span>), <span class="sc">~</span> <span class="dv">4</span> <span class="sc">-</span> .x)</span>
-<span id="cb28-249"><a href="#cb28-249" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb28-250"><a href="#cb28-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-251"><a href="#cb28-251" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-243"><a href="#cb28-243" aria-hidden="true" tabindex="-1"></a><span class="fu">### Rekodierung invertierter Variablen</span></span>
+<span id="cb28-244"><a href="#cb28-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-247"><a href="#cb28-247" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-248"><a href="#cb28-248" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-249"><a href="#cb28-249" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-250"><a href="#cb28-250" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">ends_with</span>(<span class="st">&quot;_r&quot;</span>), <span class="sc">~</span> <span class="dv">4</span> <span class="sc">-</span> .x)</span>
+<span id="cb28-251"><a href="#cb28-251" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb28-252"><a href="#cb28-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-253"><a href="#cb28-253" aria-hidden="true" tabindex="-1"></a><span class="fu">### Wiederherstellung fehlender cvstm_variables</span></span>
+<span id="cb28-253"><a href="#cb28-253" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-254"><a href="#cb28-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-257"><a href="#cb28-257" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-258"><a href="#cb28-258" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-259"><a href="#cb28-259" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-260"><a href="#cb28-260" aria-hidden="true" tabindex="-1"></a>    <span class="at">cvstm_propcorrect =</span> <span class="fu">replace</span>(</span>
-<span id="cb28-261"><a href="#cb28-261" aria-hidden="true" tabindex="-1"></a>      cvstm_propcorrect,</span>
-<span id="cb28-262"><a href="#cb28-262" aria-hidden="true" tabindex="-1"></a>      cvstm_propcorrect <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>,</span>
-<span id="cb28-263"><a href="#cb28-263" aria-hidden="true" tabindex="-1"></a>      csvtm_sum[cvstm_propcorrect <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>] <span class="sc">/</span> <span class="dv">120</span></span>
-<span id="cb28-264"><a href="#cb28-264" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb28-265"><a href="#cb28-265" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb28-266"><a href="#cb28-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-267"><a href="#cb28-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-268"><a href="#cb28-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-269"><a href="#cb28-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-270"><a href="#cb28-270" aria-hidden="true" tabindex="-1"></a><span class="fu">## Entfernen redundanter Variablen (optional)</span></span>
+<span id="cb28-255"><a href="#cb28-255" aria-hidden="true" tabindex="-1"></a><span class="fu">### Wiederherstellung fehlender cvstm_variables</span></span>
+<span id="cb28-256"><a href="#cb28-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-257"><a href="#cb28-257" aria-hidden="true" tabindex="-1"></a>Fehlende <span class="in">`cvstm_procorrect`</span> Variablen können aus der <span class="in">`cvstm_sum`</span> Variable berechnet werden (sum/120)</span>
+<span id="cb28-258"><a href="#cb28-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-261"><a href="#cb28-261" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-262"><a href="#cb28-262" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-263"><a href="#cb28-263" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-264"><a href="#cb28-264" aria-hidden="true" tabindex="-1"></a>    <span class="at">cvstm_propcorrect =</span> <span class="fu">replace</span>(</span>
+<span id="cb28-265"><a href="#cb28-265" aria-hidden="true" tabindex="-1"></a>      cvstm_propcorrect,</span>
+<span id="cb28-266"><a href="#cb28-266" aria-hidden="true" tabindex="-1"></a>      cvstm_propcorrect <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>,</span>
+<span id="cb28-267"><a href="#cb28-267" aria-hidden="true" tabindex="-1"></a>      csvtm_sum[cvstm_propcorrect <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>] <span class="sc">/</span> <span class="dv">120</span></span>
+<span id="cb28-268"><a href="#cb28-268" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb28-269"><a href="#cb28-269" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb28-270"><a href="#cb28-270" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-271"><a href="#cb28-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-272"><a href="#cb28-272" aria-hidden="true" tabindex="-1"></a>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</span>
+<span id="cb28-272"><a href="#cb28-272" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-273"><a href="#cb28-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-276"><a href="#cb28-276" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-277"><a href="#cb28-277" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-278"><a href="#cb28-278" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(group_all.x, group_all.y))</span>
-<span id="cb28-279"><a href="#cb28-279" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-280"><a href="#cb28-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-281"><a href="#cb28-281" aria-hidden="true" tabindex="-1"></a><span class="fu">## Entfernen redundanter Variablen (optional)</span></span>
-<span id="cb28-282"><a href="#cb28-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-283"><a href="#cb28-283" aria-hidden="true" tabindex="-1"></a>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</span>
+<span id="cb28-274"><a href="#cb28-274" aria-hidden="true" tabindex="-1"></a><span class="fu">### Entfernen redundanter Variablen (optional)</span></span>
+<span id="cb28-275"><a href="#cb28-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-276"><a href="#cb28-276" aria-hidden="true" tabindex="-1"></a>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</span>
+<span id="cb28-277"><a href="#cb28-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-280"><a href="#cb28-280" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-281"><a href="#cb28-281" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-282"><a href="#cb28-282" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(group_all.x, group_all.y))</span>
+<span id="cb28-283"><a href="#cb28-283" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-284"><a href="#cb28-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-287"><a href="#cb28-287" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-288"><a href="#cb28-288" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-289"><a href="#cb28-289" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">group_all =</span> group)</span>
-<span id="cb28-290"><a href="#cb28-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-291"><a href="#cb28-291" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span>   </span>
-<span id="cb28-292"><a href="#cb28-292" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;pre_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;pre&quot;</span>))</span>
-<span id="cb28-293"><a href="#cb28-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-294"><a href="#cb28-294" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span>   </span>
-<span id="cb28-295"><a href="#cb28-295" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;mmq_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;question&quot;</span>))</span>
-<span id="cb28-296"><a href="#cb28-296" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-285"><a href="#cb28-285" aria-hidden="true" tabindex="-1"></a><span class="fu">### Umbennennen von Variablen (optional)</span></span>
+<span id="cb28-286"><a href="#cb28-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-287"><a href="#cb28-287" aria-hidden="true" tabindex="-1"></a>Zur Einhaltung von snake_case und Leserlichkeit.</span>
+<span id="cb28-288"><a href="#cb28-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-291"><a href="#cb28-291" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-292"><a href="#cb28-292" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-293"><a href="#cb28-293" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">group_all =</span> group)</span>
+<span id="cb28-294"><a href="#cb28-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-295"><a href="#cb28-295" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>   </span>
+<span id="cb28-296"><a href="#cb28-296" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;pre_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;pre&quot;</span>))</span>
 <span id="cb28-297"><a href="#cb28-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-298"><a href="#cb28-298" aria-hidden="true" tabindex="-1"></a><span class="fu">## Entfernen redundanter Variablen (optional)</span></span>
-<span id="cb28-299"><a href="#cb28-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-300"><a href="#cb28-300" aria-hidden="true" tabindex="-1"></a>Entfernen von Variablen, die als Artefakte beim Einlesen und Zusammenführen entstanden sind.</span>
+<span id="cb28-298"><a href="#cb28-298" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>   </span>
+<span id="cb28-299"><a href="#cb28-299" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;mmq_&quot;</span>, <span class="fu">seq_along</span>(.)), <span class="at">.cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;question&quot;</span>))</span>
+<span id="cb28-300"><a href="#cb28-300" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-301"><a href="#cb28-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-304"><a href="#cb28-304" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-305"><a href="#cb28-305" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>    </span>
-<span id="cb28-306"><a href="#cb28-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mmq_mean =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;mmq_&quot;</span>)), <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb28-307"><a href="#cb28-307" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-308"><a href="#cb28-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-309"><a href="#cb28-309" aria-hidden="true" tabindex="-1"></a><span class="fu">## Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</span></span>
+<span id="cb28-302"><a href="#cb28-302" aria-hidden="true" tabindex="-1"></a><span class="fu">## Berechnung Mittelwerte MMQ</span></span>
+<span id="cb28-303"><a href="#cb28-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-306"><a href="#cb28-306" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-307"><a href="#cb28-307" aria-hidden="true" tabindex="-1"></a>dat_full <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span>    </span>
+<span id="cb28-308"><a href="#cb28-308" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mmq_mean =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">starts_with</span>(<span class="st">&quot;mmq_&quot;</span>)), <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb28-309"><a href="#cb28-309" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-310"><a href="#cb28-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-313"><a href="#cb28-313" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-314"><a href="#cb28-314" aria-hidden="true" tabindex="-1"></a>dat_full_long <span class="ot">&lt;-</span> dat_full <span class="sc">%&gt;%</span></span>
-<span id="cb28-315"><a href="#cb28-315" aria-hidden="true" tabindex="-1"></a>   <span class="fu">pivot_longer</span>(     </span>
-<span id="cb28-316"><a href="#cb28-316" aria-hidden="true" tabindex="-1"></a>     <span class="at">cols =</span> <span class="fu">c</span>(pre_1, pre_4),      </span>
-<span id="cb28-317"><a href="#cb28-317" aria-hidden="true" tabindex="-1"></a>     <span class="at">names_to =</span> <span class="st">&quot;time_rating&quot;</span>,       </span>
-<span id="cb28-318"><a href="#cb28-318" aria-hidden="true" tabindex="-1"></a>     <span class="at">values_to =</span> <span class="st">&quot;rating&quot;</span></span>
-<span id="cb28-319"><a href="#cb28-319" aria-hidden="true" tabindex="-1"></a>     )</span>
-<span id="cb28-320"><a href="#cb28-320" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-321"><a href="#cb28-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-322"><a href="#cb28-322" aria-hidden="true" tabindex="-1"></a><span class="fu">## Überprüfung vor dem Speichern</span></span>
+<span id="cb28-311"><a href="#cb28-311" aria-hidden="true" tabindex="-1"></a><span class="fu">## Erstellung eines Long-Dataframes (Für 2x3 ANOVA)</span></span>
+<span id="cb28-312"><a href="#cb28-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-315"><a href="#cb28-315" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-316"><a href="#cb28-316" aria-hidden="true" tabindex="-1"></a>dat_full_long <span class="ot">&lt;-</span> dat_full <span class="sc">|&gt;</span></span>
+<span id="cb28-317"><a href="#cb28-317" aria-hidden="true" tabindex="-1"></a>   <span class="fu">pivot_longer</span>(     </span>
+<span id="cb28-318"><a href="#cb28-318" aria-hidden="true" tabindex="-1"></a>     <span class="at">cols =</span> <span class="fu">c</span>(pre_1, pre_4),      </span>
+<span id="cb28-319"><a href="#cb28-319" aria-hidden="true" tabindex="-1"></a>     <span class="at">names_to =</span> <span class="st">&quot;time_rating&quot;</span>,       </span>
+<span id="cb28-320"><a href="#cb28-320" aria-hidden="true" tabindex="-1"></a>     <span class="at">values_to =</span> <span class="st">&quot;rating&quot;</span></span>
+<span id="cb28-321"><a href="#cb28-321" aria-hidden="true" tabindex="-1"></a>     )</span>
+<span id="cb28-322"><a href="#cb28-322" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-323"><a href="#cb28-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-326"><a href="#cb28-326" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb28-327"><a href="#cb28-327" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dat_full)</span>
-<span id="cb28-328"><a href="#cb28-328" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb28-329"><a href="#cb28-329" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-330"><a href="#cb28-330" aria-hidden="true" tabindex="-1"></a><span class="fu"># Speichern der verarbeiteten Dataframes</span></span>
+<span id="cb28-324"><a href="#cb28-324" aria-hidden="true" tabindex="-1"></a><span class="fu">## Überprüfung vor dem Speichern</span></span>
+<span id="cb28-325"><a href="#cb28-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-328"><a href="#cb28-328" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb28-329"><a href="#cb28-329" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dat_full)</span>
+<span id="cb28-330"><a href="#cb28-330" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-331"><a href="#cb28-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-332"><a href="#cb28-332" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo = FALSE}</span></span>
-<span id="cb28-333"><a href="#cb28-333" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(</span></span>
-<span id="cb28-334"><a href="#cb28-334" aria-hidden="true" tabindex="-1"></a><span class="in">  dat_full,</span></span>
-<span id="cb28-335"><a href="#cb28-335" aria-hidden="true" tabindex="-1"></a><span class="in">  paste0(&quot;dat_full_complete/dat_full&quot;, params$id, &quot;.csv&quot;)</span></span>
-<span id="cb28-336"><a href="#cb28-336" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb28-337"><a href="#cb28-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-338"><a href="#cb28-338" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(</span></span>
-<span id="cb28-339"><a href="#cb28-339" aria-hidden="true" tabindex="-1"></a><span class="in">  dat_full_long,</span></span>
-<span id="cb28-340"><a href="#cb28-340" aria-hidden="true" tabindex="-1"></a><span class="in">  paste0(&quot;dat_full_complete/dat_full_long&quot;, params$id, &quot;.csv&quot;)</span></span>
-<span id="cb28-341"><a href="#cb28-341" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb28-342"><a href="#cb28-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-343"><a href="#cb28-343" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-332"><a href="#cb28-332" aria-hidden="true" tabindex="-1"></a><span class="fu"># Speichern der verarbeiteten Dataframes</span></span>
+<span id="cb28-333"><a href="#cb28-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-334"><a href="#cb28-334" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo = FALSE}</span></span>
+<span id="cb28-335"><a href="#cb28-335" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(</span></span>
+<span id="cb28-336"><a href="#cb28-336" aria-hidden="true" tabindex="-1"></a><span class="in">  dat_full,</span></span>
+<span id="cb28-337"><a href="#cb28-337" aria-hidden="true" tabindex="-1"></a><span class="in">  paste0(&quot;dat_full_complete/dat_full&quot;, params$id, &quot;.csv&quot;)</span></span>
+<span id="cb28-338"><a href="#cb28-338" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb28-339"><a href="#cb28-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-340"><a href="#cb28-340" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(</span></span>
+<span id="cb28-341"><a href="#cb28-341" aria-hidden="true" tabindex="-1"></a><span class="in">  dat_full_long,</span></span>
+<span id="cb28-342"><a href="#cb28-342" aria-hidden="true" tabindex="-1"></a><span class="in">  paste0(&quot;dat_full_complete/dat_full_long&quot;, params$id, &quot;.csv&quot;)</span></span>
+<span id="cb28-343"><a href="#cb28-343" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
 <span id="cb28-344"><a href="#cb28-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-345"><a href="#cb28-345" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo = TRUE, eval = FALSE}</span></span>
-<span id="cb28-346"><a href="#cb28-346" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(</span></span>
-<span id="cb28-347"><a href="#cb28-347" aria-hidden="true" tabindex="-1"></a><span class="in">  dat_full,(&quot;processed/dat_full.csv&quot;)</span></span>
-<span id="cb28-348"><a href="#cb28-348" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb28-349"><a href="#cb28-349" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-350"><a href="#cb28-350" aria-hidden="true" tabindex="-1"></a><span class="in">write.csv(dat_full_long, </span></span>
-<span id="cb28-351"><a href="#cb28-351" aria-hidden="true" tabindex="-1"></a><span class="in">          &quot;data/processed/dat_long.csv&quot;)</span></span>
+<span id="cb28-345"><a href="#cb28-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb28-346"><a href="#cb28-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-347"><a href="#cb28-347" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo = TRUE, eval = FALSE}</span></span>
+<span id="cb28-348"><a href="#cb28-348" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(dat_full,here((&quot;processed/dat_full.csv&quot;)</span></span>
+<span id="cb28-349"><a href="#cb28-349" aria-hidden="true" tabindex="-1"></a><span class="in">))</span></span>
+<span id="cb28-350"><a href="#cb28-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-351"><a href="#cb28-351" aria-hidden="true" tabindex="-1"></a><span class="in">write.csv(dat_full_long, here(&quot;data/processed/dat_long.csv&quot;))</span></span>
 <span id="cb28-352"><a href="#cb28-352" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb28-353"><a href="#cb28-353" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-354"><a href="#cb28-354" aria-hidden="true" tabindex="-1"></a><span class="fu"># Session info</span></span>
